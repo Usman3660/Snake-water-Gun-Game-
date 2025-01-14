@@ -17,12 +17,12 @@ def check(comp, user):
     
   
 comp = random.randint(0, 2)
-user = int(input("0 for Snake, 1 for water and 2 for Gun 3 to Exit the Game: \n"))
 
-score = check(comp, user)
 
 
 while(1):
+    user = int(input("0 for Snake, 1 for water and 2 for Gun 3 to Exit the Game: \n"))
+    score = check(comp, user)
     if(score == 0):
         print("user: ", user)
         print("Computer: ", comp)
